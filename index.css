@@ -1,0 +1,151 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: #333;
+}
+.box{
+	width: 750px;
+	margin:50px auto;
+}
+.link{
+	display: inline-block;
+	width: 205px;
+	height: 280px;
+	margin:0 20px;
+}
+.icon{
+	display: inline-block;
+	width: 100%;
+	height: 190px;
+	transition:all .2s linear;
+	-ms-transition:all .2s linear;
+	-webkit-transition:all .2s linear;
+	-moz-transition:all .2s linear;
+	-o-transition:all .2s linear;
+}
+.icon:hover{
+	transform: rotate(360deg) scale(1.2);
+	-ms-transform: rotate(360deg) scale(1.2);
+	-webkit-transform: rotate(360deg) scale(1.2);
+	-moz-transform: rotate(360deg) scale(1.2);
+	-o-transform: rotate(360deg) scale(1.2);
+}
+.link_miss{
+	background:url(img/mission.png) no-repeat center center;
+}
+.link_play{
+	background:url(img/play.png) no-repeat center center;
+}
+.link_touch{
+	background:url(img/touch.png) no-repeat center center;
+}
+.button{
+	display: block;
+	width: 180px;
+	height: 50px;
+	line-height: 50px;
+	text-decoration: none;
+	color: #2bcd70;
+	font-weight: bolder;
+	border:2px solid rgba(255,255,255,.8);
+	padding-left: 20px;
+	margin: 0 auto;
+	box-sizing:border-box;
+	font-family: '雅黑';
+	background: url(img/allow.png) no-repeat 130px center;
+	position: relative;
+	transition:all .4s ease;
+	-ms-transition:all .4s ease;
+	-webkit-transition:all .4s ease;
+	-moz-transition:all .4s ease;
+	-o-transition:all .4s ease;
+}
+.button:hover{
+	border:2px solid rgba(255,255,255,1);
+	background-position: 140px center;
+}
+.line{
+	display: block;
+	position: absolute;
+	background: rgba(255,255,255,1);
+	transition:all .4s ease;
+	-ms-transition:all .4s ease;
+	-webkit-transition:all .4s ease;
+	-moz-transition:all .4s ease;
+	-o-transition:all .4s ease;
+}
+.line_top{
+	height: 2px;
+	width: 0px;
+	left: -110px;
+	top: -2px;
+}
+.button:hover .line_top{
+	left: -2px;
+	width: 100%;
+}
+.hover_message_cont{
+	position: absolute;
+	bottom: 90px;
+	opacity: 0;
+	transition:all .3s ease;
+	-ms-transition:all .3s ease;
+	-webkit-transition:all .3s ease;
+	-moz-transition:all .3s ease;
+	-o-transition:all .3s ease;
+}
+.button:hover .hover_message_cont{
+	bottom: 60px;
+	opacity: 1;
+}
+.hover_message{
+	line-height: 35px;
+	background: #38c973;
+	color: white;
+	padding:10px 15px;
+	border-radius: 4px;
+	white-space: nowrap;
+}
+.hover_craft{
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	left: 50%;
+	margin-left: -10px;
+	margin-top: -6px;
+	border-top: 10px solid #38c973;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+}
+.line_right{
+	height: 0px;
+	width: 2px;
+	right: -2px;
+	top: -60px;
+}
+.button:hover .line_right{
+	top: -2px;
+	height: 100%;
+}
+.line_bottom{
+	height: 2px;
+	width: 0px;
+	right: -110px;
+	bottom: -2px;
+}
+.button:hover .line_bottom{
+	right: -2px;
+	width: 180px;
+}
+.line_left{
+	height: 0;
+	width: 2px;
+	left: -2px;
+	bottom: -60px;
+}
+.button:hover .line_left{
+	bottom: -2px;
+	height: 100%;
+}
